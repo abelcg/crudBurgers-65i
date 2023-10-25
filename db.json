@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "productName": "Bacon & cheddar burger",
+      "price": "1100",
+      "urlImg": "https://images.pexels.com/photos/3220617/pexels-photo-3220617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "de-carne",
+      "id": 1
+    },
+    {
+      "productName": "Pulled pork sandwich",
+      "price": "850",
+      "urlImg": "https://images.pexels.com/photos/7181419/pexels-photo-7181419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "de-cerdo",
+      "id": 2
+    },
+    {
+      "productName": "Chicken sandwich",
+      "price": "830",
+      "urlImg": "https://images.pexels.com/photos/5474836/pexels-photo-5474836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "de-pollo",
+      "id": 3
+    },
+    {
+      "productName": "Vegan",
+      "price": "50",
+      "urlImg": "https://images.pexels.com/photos/6546024/pexels-photo-6546024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "veganas",
+      "id": 4
+    },
+    {
+      "productName": "Licuado",
+      "price": "700",
+      "urlImg": "https://images.pexels.com/photos/3948523/pexels-photo-3948523.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "bebidas",
+      "id": 5
+    },
+    {
+      "productName": "Muffin",
+      "price": "400",
+      "urlImg": "https://images.pexels.com/photos/14395544/pexels-photo-14395544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "postre",
+      "id": 6
+    },
+    {
+      "productName": "Pancakes",
+      "price": "800",
+      "urlImg": "https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "postre",
+      "id": 7
+    },
+    {
+      "productName": "Vanilla Ice cream",
+      "price": "753",
+      "urlImg": "https://images.pexels.com/photos/14525431/pexels-photo-14525431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "postre",
+      "id": 8
+    },
+    {
+      "productName": "Meat Burger",
+      "price": "1250",
+      "urlImg": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
+      "category": "de-carne",
+      "id": 9
+    },
+    {
+      "productName": "Burger Macky",
+      "price": "1250",
+      "urlImg": "https://images.pexels.com/photos/551991/pexels-photo-551991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "de-pollo",
+      "id": 10
+    },
+    {
+      "productName": "Burger big",
+      "price": "1800",
+      "urlImg": "https://images.pexels.com/photos/1199956/pexels-photo-1199956.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "category": "de-carne",
+      "id": 11
+    },
+    {
+      "productName": "Pork Sandwich",
+      "price": "1250",
+      "urlImg": "https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "de-cerdo",
+      "id": 13
+    },
+    {
+      "productName": "burger",
+      "price": "1111",
+      "urlImg": "https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "category": "de-carne",
+      "id": 14
+    }
+  ]
+}
