@@ -90,6 +90,48 @@
       "urlImg": "https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "category": "de-carne",
       "id": 14
+    },
+    {
+      "productName": "Burger Mac",
+      "price": "1234",
+      "urlImg": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1398&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "de-carne",
+      "id": 15
+    },
+    {
+      "productName": "Burger Mac",
+      "price": "1234",
+      "urlImg": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1398&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "category": "de-carne",
+      "id": 16
+    },
+    {
+      "productName": "vegan burger",
+      "price": "3233",
+      "urlImg": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
+      "category": "veganas",
+      "id": 17
+    },
+    {
+      "productName": "Meat burger",
+      "price": "2424",
+      "urlImg": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
+      "category": "de-carne",
+      "id": 18
+    },
+    {
+      "productName": "Burger",
+      "price": "1233",
+      "urlImg": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
+      "category": "de-carne",
+      "id": 19
+    },
+    {
+      "productName": "Burger",
+      "price": "3233",
+      "urlImg": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
+      "category": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
+      "id": 20
     }
   ]
 }
