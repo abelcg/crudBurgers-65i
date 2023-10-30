@@ -5,17 +5,17 @@ const Product = ({ product }) => {
  
   return (
     <tr>
-      <td>{product._id}</td>
-      <td>{product.productName}</td>
-      <td>${product.price}</td>
+      <td>{product?.id}</td>
+      <td>{product?.productName}</td>
+      <td>${product?.price}</td>
       <td>
-        <p className="truncate-img-link m-0">{product.urlImg}</p>
+        <p className="truncate-img-link m-0">{product?.urlImg}</p>
       </td>
-      <td>{product.category}</td>
+      <td>{product?.category}</td>
       <td className="w-25">
         <div className="d-flex justify-content-center">
           <Link
-            to={`/product/edit/${product._id}`}
+            to={`/product/edit/${product?.id}`}
             className="btn-orange mx-1 text-decoration-none text-center"
           >
             Update
