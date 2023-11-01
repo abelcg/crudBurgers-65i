@@ -8,13 +8,6 @@
       "id": 1
     },
     {
-      "productName": "Pulled pork sandwich",
-      "price": "850",
-      "urlImg": "https://images.pexels.com/photos/7181419/pexels-photo-7181419.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "category": "de-cerdo",
-      "id": 2
-    },
-    {
       "productName": "Chicken sandwich",
       "price": "830",
       "urlImg": "https://images.pexels.com/photos/5474836/pexels-photo-5474836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -85,13 +78,6 @@
       "id": 13
     },
     {
-      "productName": "burger",
-      "price": "1111",
-      "urlImg": "https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "category": "de-carne",
-      "id": 14
-    },
-    {
       "productName": "Burger Mac",
       "price": "1234",
       "urlImg": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=1398&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -127,11 +113,11 @@
       "id": 19
     },
     {
-      "productName": "Burger",
-      "price": "3233",
+      "productName": "Burger vegana",
+      "price": "1256",
       "urlImg": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
-      "category": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg",
-      "id": 20
+      "category": "veganas",
+      "id": 21
     }
   ]
 }

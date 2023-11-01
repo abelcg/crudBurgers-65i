@@ -10,6 +10,7 @@ import {
 import Swal from 'sweetalert2';
 import { useNavigate } from 'react-router-dom';
 import axios from '../../../config/axiosInit';
+import { STATUS } from '../../../constants';
 
 const ProductCreate = ({ getAPI }) => {
   //States
@@ -26,8 +27,8 @@ const ProductCreate = ({ getAPI }) => {
   const handleChange = (e) => {
     const value = e.target.value;
     const name = e.target.name;
-
-    setInputs((prevValues) => ({ ...prevValues, [name]: value }));
+    //const {name, value} = e.target
+    setInputs((prevValues)=> ({...prevValues, [name]: value }));
   };
 
   //create product
@@ -87,7 +88,7 @@ const ProductCreate = ({ getAPI }) => {
           const res = await axios.post(URL, newProduct);
 
           console.log(res);
-          if (res.status === 201) {
+          if (res.status === STATUS.STATUS_CREATED) {
             Swal.fire(
               'Created',
               'Your product have been created successfully',
