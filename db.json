@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "productName": "Bacon & cheddar burger",
-      "price": "1100",
+      "productName": "Bacon cheddar burger",
+      "price": "1500",
       "urlImg": "https://images.pexels.com/photos/3220617/pexels-photo-3220617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "category": "de-carne",
       "id": 1
