@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
-import { Container, Form } from 'react-bootstrap';
+import { Container, Form, Alert } from 'react-bootstrap';
 import {
   validateCategory,
   validatePrice,
@@ -20,6 +20,9 @@ const ProductCreate = ({ getAPI }) => {
   const [category, setCategory] = useState(''); */
   const URL = import.meta.env.VITE_API_HAMBURGUESERIA;
   const navigate = useNavigate();
+  //errors state
+  const [errorMessage, setErrorMessage] = useState(null);
+  const [show, setShow] = useState(false);
 
   //One general state
   const [inputs, setInputs] = useState({});
@@ -103,6 +106,13 @@ const ProductCreate = ({ getAPI }) => {
           }
         } catch (error) {
           console.log(error);
+          error.response.data?.message &&
+          setErrorMessage(error.response.data?.message);
+          error.response.data?.errors?.length > 0 &&
+            error.response.data.errors?.map((error) =>
+              setErrorMessage(error.msg)
+            );
+            setShow(true);
         }
       }
     });
@@ -164,6 +174,16 @@ const ProductCreate = ({ getAPI }) => {
             <button className='btn-yellow'>Save</button>
           </div>
         </Form>
+        {show && (
+        <Alert
+          key={errorMessage}
+          variant="danger"
+          onClose={() => setShow(false)}
+          dismissible
+        >
+          {errorMessage}
+        </Alert>
+        )}
       </Container>
     </div>
   );

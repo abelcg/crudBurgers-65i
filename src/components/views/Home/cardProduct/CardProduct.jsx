@@ -21,7 +21,7 @@ const CardProduct = ({ product }) => {
           <div className="d-flex align-items-center justify-content-between">
             <p className="mb-0 ms-4 fs-4 ">${product?.price}</p>
             <Link
-              to={`/product/buy/${product?.id}`}
+              to={`/product/buy/${product?._id}`}
               className="btn-gray text-decoration-none text-center"
             >
               Buy
