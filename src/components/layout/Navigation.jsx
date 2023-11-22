@@ -1,8 +1,17 @@
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+/* eslint-disable react/prop-types */
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Link, useNavigate } from 'react-router-dom';
 
 
-const Navigation = () => {
+const Navigation = ({ loggedUser, setLoggedUser }) => {
+  const navigate = useNavigate();
+
+  const logout = ()=>{
+    localStorage.removeItem("user-token");
+    setLoggedUser({})
+    navigate("/");
+  };
+
   return (
     <div>
       <Navbar className='bg-red' expand='lg'>
@@ -16,9 +25,18 @@ const Navigation = () => {
               <Link className='nav-link' to='/'>
                 Home
               </Link>
-              <Link className='nav-link' to='/product/table'>
-                Manage Products
-              </Link>
+               {loggedUser.token ? (
+                <>
+                  <Button variant="dark" onClick={logout}>Log out</Button>
+                  <Link className="nav-link" to="/product/table">
+                    Manage Products
+                  </Link>
+                </>
+              ) : (
+                <Link className="nav-link" to="/auth/login">
+                  Login
+                </Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

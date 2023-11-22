@@ -10,9 +10,14 @@ import ProductsTable from './components/views/productsTable/ProductsTable';
 import ProductCreate from './components/views/productCreate/ProductCreate';
 import ProductEdit from './components/views/productEdit/ProductEdit';
 import axios from './config/axiosInit';
+import ProductDetails from './components/views/productDetails/ProductDetails';
+import Login from './components/views/login/Login';
+import Register from './components/views/register/Register';
+import ProtectedRoute from './routes/ProtectedRoutes';
 
 function App() {
   const [products, setProducts] = useState();
+  const [loggedUser, setLoggedUser] = useState({});
 
   //usamos la variable de entorno
   const URL = import.meta.env.VITE_API_HAMBURGUESERIA;
@@ -39,21 +44,51 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navigation />
+      <Navigation loggedUser={loggedUser} setLoggedUser={setLoggedUser} />
       <main>
         <Routes>
           <Route exact path='/' element={<Home products={products} />} />
           <Route
+            path='/*'
+            element={
+              <ProtectedRoute>
+                <Routes>
+                  <Route
+                    exact
+                    path='/product/table'
+                    element={
+                      <ProductsTable products={products} getAPI={getAPI} />
+                    }
+                  />
+                  <Route
+                    exact
+                    path='/product/create'
+                    element={<ProductCreate getAPI={getAPI} />}
+                  />
+                  <Route
+                    exact
+                    path='/product/edit/:id'
+                    element={<ProductEdit getAPI={getAPI} />}
+                  />
+                </Routes>
+              </ProtectedRoute>
+            }
+          ></Route>
+          <Route
             exact
-            path='/product/table'
-            element={<ProductsTable products={products} getAPI={getAPI} />}
+            path='/product/buy/:id'
+            element={<ProductDetails URL={URL} />}
           />
           <Route
             exact
-            path='/product/create'
-            element={<ProductCreate getAPI={getAPI} />}
+            path='/auth/login/'
+            element={<Login setLoggedUser={setLoggedUser} />}
           />
-          <Route exact path='/product/edit/:id' element={<ProductEdit getAPI={getAPI} />} />
+          <Route
+            exact
+            path='/auth/register/'
+            element={<Register setLoggedUser={setLoggedUser} />}
+          />
           <Route exact path='*' element={<Error404 />} />
         </Routes>
       </main>
